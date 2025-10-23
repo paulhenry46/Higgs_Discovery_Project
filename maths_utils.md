@@ -41,7 +41,6 @@ $$\mathcal{V}_{\text{Higgs}} = -\frac{1}{2} \mu^2 \phi^2 - \frac{1}{4} \lambda \
 
 * Physical Role:
     * It determines the field's minimum energy state (the Vacuum Expectation Value, $v$).
-    * It defines the self-interaction strength of the field via the coupling constant $\lambda$.
     * The curvature of this potential at the minimum defines the mass of the physical particle ($m_h^2 \propto \partial^2 \mathcal{V} / \partial \phi^2$).
 
 ### 2. Gauge Invariance
