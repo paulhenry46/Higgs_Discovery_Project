@@ -1,10 +1,9 @@
 # Theory
 ## Standard Model
-SRC : https://home.cern/science/physics/standard-model
 
 The Standard Model (SM) of particle physics is the most comprehensive theory describing the fundamental building blocks of the universe and three of the four fundamental forces (electromagnetism, strong and weak nuclear forces) they interact with. It is not a "Theory of Everything" because it notably excludes gravity.
 ### Fundamental Particles
-The Standard Model classifies all known fundamental particles into two groups: Fermions (the matter constituents) and Bosons (the force carriers).
+The Standard Model classifies all known fundamental particles into two groups [^CERN_SM]: Fermions (the matter constituents) and Bosons (the force carriers).
 #### Fermions
 Fermions are the particles that make up all visible matter. There are 12 types, arranged in three generations. Ordinary matter is made only of the first generation.
 ##### 1st generation
@@ -212,7 +211,7 @@ The core connection between the W, Z, and Higgs fields is the exchange of degree
 
 #### VEV Proportionality
 
-The $W$ and $Z$ bosons acquire mass proportional to the VEV ($v$) and their respective Electroweak Coupling Constants ($g$ for the weak force and $g'$ for hypercharge).
+The $W$ and $Z$ bosons acquire mass proportional to the VEV ($v$) [^Gauge] and their respective Electroweak Coupling Constants ($g$ for the weak force and $g'$ for hypercharge).
 
 | Boson | Mass Formula |
 | :--- | :--- |
@@ -266,11 +265,11 @@ $$\mathcal{L}_{\text{coupl}} = - \left( \frac{\sqrt{2} m_f}{v} \right) \frac{1}{
 
 $$\mathcal{L}_{\text{coupl}} = \mathbf{- \frac{m_f}{v} \bar{\psi} h \psi}$$
 
-Since the Vacuum Expectation Value ($v \approx 246 \text{ GeV}$) is a **universal constant**, the magnitude of the interaction (the coupling strength) is **directly proportional to the mass ($m_f$)** of the fermion.
+Since the Vacuum Expectation Value ($v \approx 246 \text{ GeV}$) is a universal constant, the magnitude of the interaction (the coupling strength) is directly proportional to the mass ($m_f$) of the fermion.
 
-This relationship explains why the Higgs boson interacts most frequently with the heaviest particles, such as the **Top Quark** and the $Z$ and $W$ bosons (which also gain mass proportional to $v$), justifying the experimental search strategy using heavy decay products.
+**This relationship explains why the Higgs boson interacts most frequently with the heaviest particles**, such as the Top Quark and the $Z$ and $W$ bosons (which also gain mass proportional to $v$), justifying the experimental search strategy using heavy decay products.
 ## Synthesis
-The mass generation for **Fermions** (quarks and charged leptons) is not caused by the VEV ($v$) alone, nor by the Yukawa coupling ($g_f$) alone, but by their essential interaction. This interaction can be understood as a clear chain of causality:
+The mass generation for Fermions (quarks and charged leptons) is not caused by the VEV ($v$) alone, nor by the Yukawa coupling ($g_f$) alone, but by their essential interaction. This interaction can be understood as a clear chain of causality:
 
 | Element | Symbol | Causal Role | Description |
 | :--- | :--- | :--- | :--- |
@@ -291,10 +290,12 @@ In summary, the VEV (v) is responsible for giving mass to other particles, while
 
 [^SF_Novaes]: S. F. Novaes (2000). "Standard Model: An Introduction" https://arxiv.org/pdf/hep-ph/0001283
 
-[^Gauge] : Cheng, Ta-Pei, & Li, Ling-Fong., Gauge Theory of Elementary Particle Physics (1984).
+[^Gauge]: Cheng, Ta-Pei, & Li, Ling-Fong., Gauge Theory of Elementary Particle Physics (1984).
 
-[^MassPot] : Srednicki, Mark., Quantum Field Theory (2007)
+[^MassPot]: Srednicki, Mark., Quantum Field Theory (2007)
 
-[^SSB_PesKin] : Peskin, Michael E., & Schroeder, Daniel V., An Introduction to Quantum Field Theory (1995).
+[^SSB_PesKin]: Peskin, Michael E., & Schroeder, Daniel V., An Introduction to Quantum Field Theory (1995).
 
-[^Higgs_David] : Griffiths, David J., Introduction to Elementary Particles (2008).
+[^Higgs_David]: Griffiths, David J., Introduction to Elementary Particles (2008).
+
+[^CERN_SM]: https://home.cern/science/physics/standard-model
