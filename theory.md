@@ -50,21 +50,18 @@ Because the Higgs Field is scalar, its corresponding particle, the Higgs Boson, 
 ## Brout-Englert-Higgs (BEH) Mechanism
 ### Physical View
 #### Problem
-SRC : S. F. Novaes (2000). "Standard Model: An Introduction" https://arxiv.org/pdf/hep-ph/0001283
 ##### Introduction
-
-
-The BEH mechanism was required because of a fundamental conflict in physics:
+The BEH mechanism was required because of a fundamental conflict in physics :
 - To successfully unify the electromagnetic and weak nuclear forces into the Electroweak Theory, the theory required the force carriers (W and Z bosons) to be massless.
 -  Experiments showed that the W and Z bosons are, in fact, incredibly massive (≈80−91 GeV/c2), and all matter particles also have mass.
 ##### Gauge Invariance
-Simply adding mass terms "by hand" to the equations in the Standard Model's Electroweak Theory would break the underlying symmetry because it violates the principle of Gauge Invariance, which is essential for mathematical consistency and renormalization.
+Simply adding mass terms "by hand" to the equations in the Standard Model's Electroweak Theory would break the underlying symmetry because it violates the principle of Gauge Invariance [Griffiths, Chap. 9-10], which is essential for mathematical consistency and renormalization.
 
 We demonstrate this using the simplest case: a massive gauge field $A_\mu$ (like the photon field in Quantum Electrodynamics, QED, governed by $U(1)$ symmetry). The principle holds for the $W$ and $Z$ bosons.
 
 ###### The Gauge Transformation
 
-A gauge transformation for a massless field $A_\mu$ (the photon field) is defined by a local shift involving an arbitrary function $\Lambda(x)$ that depends on spacetime $x$:
+A gauge transformation [S. F. Novaes, 1.2.1] for a massless field $A_\mu$ (the photon field) is defined by a local shift involving an arbitrary function $\Lambda(x)$ that depends on spacetime $x$:
 
 \[A_\mu(x) \longrightarrow A'_\mu(x) = A_\mu(x) + \partial_\mu \Lambda(x)\]
 
@@ -73,7 +70,6 @@ The kinetic term of the Lagrangian, $\mathcal{L}_{\text{kinetic}} = -\frac{1}{4}
 #####  Inserting the "By Hand" Mass Term
 
 To make the gauge boson massive, we attempt to insert the standard QFT mass term structure into the Lagrangian:
-<!-- %TODO Source for the QFT mass term structure -->
 
 $$\mathcal{L}_{\text{mass}} = \frac{1}{2} M^2 A^\mu A_\mu$$
 
@@ -123,7 +119,7 @@ The Higgs Boson is simply the quantum excitation of the Higgs Field itself.
 ### Mathematical Model
 #### The Higgs Potential (The "Mexican Hat")
 
-The theory starts with the potential energy term, $V(\Phi)$, from the Higgs Lagrangian:
+The theory starts with the potential energy term, $V(\Phi)$, from the Higgs Lagrangian [Peskin & Schroeder, Chap. 20]:
 
 $$V(\Phi) = \mu^2 |\Phi|^2 + \lambda |\Phi|^4$$
 
@@ -157,7 +153,7 @@ The VEV itself is:
 
 $$\mathbf{v = |\Phi|_{\text{minimum}} = \sqrt{-\frac{\mu^2}{2 \lambda}}}$$
 
-Since $v$ is non-zero, the field has a constant background value everywhere, which results in Spontaneous Symmetry Breaking (SSB).
+Since $v$ is non-zero, the field has a constant background value everywhere, which results in Spontaneous Symmetry Breaking (SSB) [Griffiths, Chap. 12].
 
 Indeed, The Higgs Lagrangian, is symmetric under rotations ; the potential \(V(Φ)=μ2∣Φ∣2+λ∣Φ∣4\) is symmetric.
 
@@ -169,17 +165,17 @@ If the minimum were at ∣Φ∣=0, the system would respect the full symmetry. B
 
 
 
-To isolate the mass of the observable particle (the Higgs Boson, $h$) from the full complex doublet ($\Phi$), we must choose a specific gauge where the three unphysical components (the Goldstone bosons) are absorbed by the $W^\pm$ and $Z^0$ bosons, giving them mass.
+To isolate the mass of the observable particle (the Higgs Boson, $h$) from the full complex doublet ($\Phi$), we must choose a specific gauge[Cheng & Li, Chap. 5] where the three unphysical components (the Goldstone bosons) are absorbed by the $W^\pm$ and $Z^0$ bosons, giving them mass.
 
 In this  gauge, the field $\Phi$ is parameterized such that only the neutral, real component takes the vacuum expectation value, and the fluctuations around it define the physical Higgs field, $\phi$:
 
 $$\Phi(x) \approx \frac{1}{\sqrt{2}} \begin{pmatrix} 0 \\ v + \phi(x) \end{pmatrix}$$
 
-By focusing only on this single real component $\phi$, we can simplify the potential for the mass calculation (adopting the standard convention $V(\phi) = \frac{1}{2} \mu^2 \phi^2 + \frac{1}{4} \lambda \phi^4$):
+By focusing only on this single real component $\phi$, we can simplify the potential for the mass calculation [Cheng & Li, Chap. 5] (adopting the standard convention $V(\phi) = \frac{1}{2} \mu^2 \phi^2 + \frac{1}{4} \lambda \phi^4$):
 
 The terms 1/2 and 1/4 are added to simplify the final expression of mass.
 
-The mass-squared is defined as:
+The mass-squared is defined as [Srednicki, Chap. 2]:
 $$m_h^2 = \left. \frac{\partial^2 V}{\partial \phi^2} \right|_{\phi=v}$$
 
 1. First Derivative:
@@ -200,3 +196,15 @@ $$m_h^2 = (-\lambda v^2) + 3 \lambda v^2$$
 $$\mathbf{m_h^2 = 2 \lambda v^2}$$
 
 This confirms that the Higgs Boson mass is determined by the VEV and its self-interaction coupling constant ($\lambda$).
+
+TODO Sources[^note-name].ii
+
+[^SF_Novaes]: S. F. Novaes (2000). "Standard Model: An Introduction" https://arxiv.org/pdf/hep-ph/0001283
+
+[^Gauge] : Cheng, Ta-Pei, & Li, Ling-Fong., Gauge Theory of Elementary Particle Physics (1984).
+
+[^MassPot] : Srednicki, Mark., Quantum Field Theory (2007)
+
+[^SSB_PesKin] : Peskin, Michael E., & Schroeder, Daniel V., An Introduction to Quantum Field Theory (1995).
+
+[^Higgs_David] : Griffiths, David J., Introduction to Elementary Particles (2008).
