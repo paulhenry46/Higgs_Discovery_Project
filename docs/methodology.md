@@ -187,7 +187,7 @@ Each of the four leptons (electrons and muons) must satisfy strict conditions to
 * **Minimum Transverse Momentum ($\mathbf{p_T}$):** Leptons must have high transverse momentum to ensure they are decay products of a massive particle (like the $Z$) and not from low-energy background. Sequential thresholds are applied [^TM]:
     * The most energetic lepton (leading lepton) must have $\mathbf{p_T} > 20 \text{ GeV/c}$.
     * The second leading lepton must have $\mathbf{p_T} > 10 \text{ GeV/c}$.
-    <!--* The two remaining leptons must have $\mathbf{p_T} > 5 \text{ GeV/c}$.-->
+    * The two remaining leptons must have $\mathbf{p_T} > 5 \text{ GeV/c}$. This criterion is a technical acceptance threshold (baseline cut). Its purpose is just to guarantee data quality and perform initial background rejection.
 * **Detector Region ($\mathbf{|\eta|}$):** Leptons are restricted to the central region of the detector (low pseudorapidity, typically $|\mathbf{\eta}| \lesssim 2.5$) where the detector's resolution is highest.
 * **Isolation (Jet Rejection):** The most critical cut. A lepton is considered **isolated** if there is minimal additional energy or track activity within a small cone around its trajectory. This is essential to eliminate leptons produced within **jets** (fragments of quarks/gluons) and verify they come directly from the $Z$ or $Z^{*}$ decay.
 
