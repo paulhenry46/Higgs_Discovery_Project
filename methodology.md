@@ -94,7 +94,7 @@ The overall decay probability for a specific channel is summarized by the **Bran
 
 $$\mathbf{BR}(\text{Channel } X) = \frac{\text{Decay Rate of Channel } X \text{ ($\Gamma_X$)}}{\text{Total Decay Rate (Sum of all) } \Gamma_i}$$
 
-This calculation, derived from the sum of all relevant Feynman diagrams, allows us to predict the $BR$ values (like the $58\%$ for $H \rightarrow b\bar{b}$) before the particle is even observed in the detector.
+This calculation, derived from the sum of all relevant Feynman diagrams, allows us to predict the $BR$ values  before the particle is observed in the detector.
 
 <!-- Exemple of calculation for a BR + Source -->
 
@@ -107,8 +107,75 @@ In experimental particle physics, the selection of a decay channel is a compromi
 | **High BR** ($H \rightarrow b\bar{b}$) | **High Signal, High Background** | The final particles ($b$ quarks) fragment into **jets** of hadrons, which are nearly indistinguishable from the "junk" produced by standard proton-proton collisions. This leads to a very poor signal-to-background ratio. |
 | **Low BR** ($H \rightarrow 4\ell$) | **Low Signal, Very Low Background** | The final particles are **leptons** (electrons $e$ and muons $\mu$), which pass cleanly through the detector layers, leaving distinct and isolated signatures. This leads to an extremely high (clean) signal-to-background ratio. |
 
-The **Golden Channel** ($H \rightarrow Z Z \rightarrow 4\ell$) is therefore chosen for **Discovery** not because of its probability, but because the clean signature of the four leptons provides the necessary confidence level (the "five sigma" threshold) to claim a new particle's existence.
+## The Golden Channel
 
+The **Golden Channel** refers to the decay path of the Higgs boson ($H$) into four charged leptons (electrons $e^{\pm}$ or muons $\mu^{\pm}$), denoted as $H \rightarrow Z Z \rightarrow 4\ell$. This channel was crucial for the 2012 discovery due to its exceptionally **clean signature** despite its rarity.
 
+### 1. Kinetic Possibility (Feasibility Check)
+
+A decay channel is kinematically possible if the mass of the parent particle is greater than or equal to the sum of the masses of its final, stable products.
+
+For the Golden Channel, the decay chain is:
+
+$$\mathbf{H} \longrightarrow \mathbf{Z} + \mathbf{Z} \longrightarrow (\ell_1^+ + \ell_1^-) + (\ell_2^+ + \ell_2^-)$$
+
+We must check the initial decay of the Higgs into two $Z$ bosons.
+
+| Particle | Standard Model Mass ($M$) |
+| :--- | :--- |
+| **Higgs Boson ($H$)** | $M_H \approx 125 \text{ GeV/c}^2$ (Observed Mass) |
+| **$Z$ Boson ($Z$)** | $M_Z \approx 91.2 \text{ GeV/c}^2$ |
+
+**The Kinematic Problem:**
+
+$$M_H \quad \mathbf{vs} \quad M_Z + M_Z$$
+$$125 \text{ GeV/c}^2 \quad \mathbf{vs} \quad 91.2 \text{ GeV/c}^2 + 91.2 \text{ GeV/c}^2 = \mathbf{182.4 \text{ GeV/c}^2}$$
+
+Since $125 \text{ GeV/c}^2 < 182.4 \text{ GeV/c}^2$, the decay of the Higgs into two **on-shell** (real, fully massive) $Z$ bosons is **kinetically forbidden**.
+
+**The Solution :**
+
+The channel is saved by **Quantum Mechanics**. One or both of the $Z$ bosons produced by the Higgs must be virtual. A virtual particle is a temporary fluctuation that does not respect the mass-shell constraint ($M=91.2 \text{ GeV/c}^2$), allowing it to have a lower mass.
+
+The decay is therefore correctly written as:
+
+$$\mathbf{H} \longrightarrow \mathbf{Z} + \mathbf{Z}^{*} \longrightarrow 4\ell$$
+
+Where $\mathbf{Z}^{*}$ represents the virtual $Z$ boson. This allows the total mass of the products to respect the $\mathbf{125 \text{ GeV/c}^2}$ limit, making the decay **kinetically possible**.
+
+***
+
+### 2. Probability (The Rarity of the Channel)
+
+The probability of the Golden Channel is determined by two successive steps, resulting in an overall low **Branching Ratio ($BR$)**:
+
+#### A. $H \rightarrow Z Z$ Probability (Coupling)
+
+The $H \rightarrow Z Z$ decay is the result of the Higgs coupling to the massive gauge bosons. This coupling is strong (proportional to $M_Z^2 / v$), which makes $H \rightarrow Z Z$ a **relatively high** BR channel compared to others like $H \rightarrow \gamma \gamma$.
+
+However, because one of the $Z$ bosons must be **virtual** ($\mathbf{Z}^{*}$), the decay rate is significantly suppressed compared to if both were real. Indeed, the more virtual the particle is (the further it is from its actual mass MZ), the lower the probability of its existence and decay. This virtual suppression keeps the $H \rightarrow Z Z$ BR at $\sim 2.7\%$ according to [^CERN_2].
+
+#### B. $Z \rightarrow \ell^+ \ell^-$ Probability (The Filter)
+
+For the final state to be **clean** ($4\ell$), each $Z$ boson (or $Z^{*}$) must decay into a pair of charged leptons ($e^+e^-$ or $\mu^+\mu^-$).
+
+The probability of a single $Z$ boson decaying into charged leptons is, according to [^Particle_Review] 
+$$BR(Z \rightarrow \ell^+\ell^-) \approx \mathbf{3.36\%}$$
+
+#### C. Final Branching Ratio Calculation
+
+Since both $Z$ bosons must decay into charged leptons, the overall BR is the product of the probabilities:
+
+$$\mathbf{BR}(H \rightarrow 4\ell) = BR(H \rightarrow Z Z) \times BR(Z \rightarrow \ell^+\ell^-) \times BR(Z \rightarrow \ell^+\ell^-)$$
+
+$$\mathbf{BR}(H \rightarrow 4\ell) \approx 0.027 \times 0.0336 \times 0.0336 \approx \mathbf{0.00003} \quad \text{or} \quad \mathbf{0.003 \%}$$
+
+*(Note: The actual observed BR, factoring in all final lepton combinations, is $\mathbf{\sim 0.012\%}$)*.
+
+The key conclusion is that the $H \rightarrow Z Z \rightarrow 4\ell$ channel is **possible** through virtual particles, but its probability is extremely **low** due to the requirement that both $Z$ bosons must decay into leptons. This rarity is a worthwhile sacrifice for its **unambiguous, clean signal** in the detector.
 
 [^CERN_1]: CERN Documentation on Detectors https://home.cern/science/experiments/how-detector-works
+
+[^CERN_2] : https://arxiv.org/pdf/1101.0593 (Branching ration table 28)
+
+[^Particle_Review] https://pdg.lbl.gov/2020/tables/rpp2020-sum-gauge-higgs-bosons.pdf page 3
