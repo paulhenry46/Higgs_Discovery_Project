@@ -1,5 +1,4 @@
 RECORDS="12362 12363 12364 12365 12366 12367 12368"
-RECORDS="12366 12367 12368"
 
 # Loop through each Record ID and run the download command
 for ID in $RECORDS; do
