@@ -3,9 +3,16 @@ python3 -m venv higgs_env
 source higgs_env/bin/activate
 
 pip install requirements.txt
+# Download and set up Root
+Root enable to read the .root files we will download. You can get  at [the ROOT homepage](https://root.cern/install/#download-a-pre-compiled-binary-distribution)
 
+In my case, because I use a debian based distribution and because i don't want to use snap, i choose to install from the binary method. If you do the same, don't forget to add `source /path/to/root/bin/thisroot.sh` at the end of `higgs_env/bin/activate` file we create above.
+
+You can check if it is installed and ready by running the `text.py` file.
 
 # Download Data
+## With HTTP
+This way is not advices, since you can experiment errors because CERN servers can produce timeout or gateway error.
 We will use the files provided by the CERN in [this record](https://opendata.cern.ch/record/12360) :
 - [SMHiggsToZZTo4L.root](https://opendata.cern.ch/record/12361/files/SMHiggsToZZTo4L.root)
 - [ZZTo4mu.root](https://opendata.cern.ch/record/12362/files/ZZTo4mu.root)
@@ -15,6 +22,15 @@ We will use the files provided by the CERN in [this record](https://opendata.cer
 - [Run2012C_DoubleMuParked.root](https://opendata.cern.ch/record/12366/files/Run2012C_DoubleMuParked.root) (4 Gib)
 - [Run2012B_DoubleElectron.root](https://opendata.cern.ch/record/12367/files/Run2012B_DoubleElectron.root) (1.7 Gib)
 - [Run2012C_DoubleElectron.root](https://opendata.cern.ch/record/12368/files/Run2012C_DoubleElectron.root) (2.6 GiB)
+
+## With the CERN Client
+Run `pip install cernopendata-client` The dependency is not included in requirements.txt because it is not strcyly mandatory.
+
+Run `cernopendata-client download-files --recid 12361` or for better performances `cernopendata-client download-files --recid 12361 --protocol xrootd` and repeat for records `12362 12363 12364 12365 12366 12367 12368`.
+### Script
+You can also use the script `download_script.sh` to download all files with `xrootd` protocol.
+### XRoot Protocol
+If you want to use XRoot Protocol, you will need to install it : `sudo apt install xrootd-client`
 
 We will see what these data correspond to in another section.
 
