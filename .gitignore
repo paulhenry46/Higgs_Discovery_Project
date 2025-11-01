@@ -10,5 +10,3 @@ higgs_env/
 # Data and Plots
 data/*/*.root
 data/*.csv
-plots/*.png
-plots/*.pdf
