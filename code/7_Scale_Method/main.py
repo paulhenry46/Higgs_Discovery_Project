@@ -8,7 +8,7 @@ Z_MASS = 91.1876
 
 # List of the ROOT files downloaded.
 DATA_FILES = {
-    #"DoubleMuon_B": "../../data/12365/Run2012B_DoubleMuParked.root",
+    "DoubleMuon_B": "../../data/12365/Run2012B_DoubleMuParked.root",
     "DoubleMuon_C": "../../data/12366/Run2012C_DoubleMuParked.root",
     "DoubleElectron_B": "../../data/12367/Run2012B_DoubleElectron.root",
     "DoubleElectron_C": "../../data/12368/Run2012C_DoubleElectron.root"
