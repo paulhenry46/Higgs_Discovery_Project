@@ -27,14 +27,18 @@ We take the four remaining "golden" leptons and try to pair them up to form two 
 ### 3. Comparing with Monte Carlo Simulation
 To confirm the discovery, we compare the data with Monte Carlo simulations of background noise and the Higgs signal.
 
-## Available Documents:
+## ⚙️ Technical Details
+The analysis is divided into several Jupyter notebooks. It uses the `awkward`, `uproot`, and `pandas` libraries. We do not vectorize the functions in order to better understand the physics behind them. This is a demonstration, so performance is not important.
+
+## 📑 Available Documents:
+Placed in recommended reading order to fully understand the project and the physics behind it :
 - [Maths & kinematics reference (`docs/maths_utils.md`)](docs/maths_utils.md) — Quantum Field Theory reminders, four-momentum and invariant mass used in reconstruction.
 - [Theory (`docs/theory.md`)](docs/theory.md) — Standard Model, BEH mechanism and Higgs properties.
 - [Methodology (`docs/methodology.md`)](docs/methodology.md) — Detection strategy, event selection and invariant mass reconstruction for the golden channel.
 - [Data download & setup (`data/download_instructions.md`)](data/download_instructions.md) — Environment setup and links to the CERN open data files used.
 - [Dependencies (`requirements.txt`)](requirements.txt) — Python packages needed to run the analysis.
 
-## Project Structure
+## 💼 Project Structure
 - data/ — raw input files and download instructions ([data/download_instructions.md](data/download_instructions.md))
 - code/ — analysis scripts and notebooks
 - plots/ — generated figures
